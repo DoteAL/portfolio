@@ -3,41 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
-	<style>
-		.carousel {
-			width: 900px; /* 3 * 300px */
-			overflow: hidden;
-			margin: 0 auto;
-		}
-		
-		.carousel-track {
-			display: flex;
-			transition: transform 0.3s ease-in-out;
-		}
-		
-		.slide {
-			min-width: 300px;
-			height: 200px;
-			background-color: lightblue;
-			text-align: center;
-			line-height: 200px;
-			font-size: 24px;
-			margin-right: 10px;
-		}
-		
-		.buttons {
-			text-align: center;
-			margin-top: 10px;
-		}
-	</style>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="styles.css">
+
+	
+	
 </head>
 <body>
 	<section class="main-page">
-		<p>AL</p>
+		<p class="initials sticky-element" >AL</p>
+		
+		<div class="panel sticky-element">
+			<button class="button-panel">contact</button>
+			<button class="button-panel">about me</button>
+			<button class="button-panel">projects</button>
+			<button class="button-panel">cases</button>
+			<button class="button-panel">home</button>
+		</div>
 	
 		<p class="main-tittle">front-end.web(developer)_</p>
 		
-		<button>dark mode</button>
+		<button class="mode sticky-element">dark mode</button>
 	</section>
 
 	<section class="cases-page">
