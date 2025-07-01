@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Manrope:wght@200..800&display=swap');
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: gray solid 1px;
+    display: flex;
+    justify-content: space-between; /* кнопка йде праворуч */
+    /* по вертикалі по центру */
+    height: 100vh;
+}
+.carousel {
+    width: 900px; /* 3 * 300px */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    min-width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+body {
+    font-family: "manrop", sans-serif;
+    margin: 0;
+}
+
+
+.main-page { /* контейнер на всю висоту екрану */
+    background: #FFFAFA;
+    height: 100vh;
+}
+
+.initials {
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 800;
+    grid-column-start: auto;
+    height: 80px;
+    margin-left: 0;
+    margin-top: 12px;
+    color:LightSkyBlue;
+    position: fixed;
+}
+
+.main-tittle {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.mode {
+    position: fixed;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    transform: rotate(270deg) translateY(-50%);
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 19px;
+    top: 68%;
+    right: 0;
+    cursor: pointer;
+}
+
+.panel {
+    font-family: "Manrope", sans-serif;
+    transform: rotate(270deg);
+    height: 20px;
+    align-items: center;
+    font-size: 14px;
+    grid-column-start: initial;
+    position: fixed;     /* підбери вручну для вирівнювання з "AL" */
+    left: 0;
+    transform: rotate(270deg);
+    transform-origin: left top;
+    top: 76%;
+    background: LightSkyBlue;
+    border-radius: 8px;
+}
+
+.button-panel {
+    border: none;
+    outline: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: transparent;
+}
+
+/* colors: #B0E0E6
+
+*/
