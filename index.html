@@ -5,95 +5,118 @@
 	<title>Title</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="styles.css">
-
+	
+	<script src="index.js"></script>
 	
 	
 </head>
 <body>
-	<section class="main-page">
-		<p class="initials sticky-element" >AL</p>
+	<div class="main-container">
+
+		<section class="main-page">
+			<p class="initials sticky-element" >AL</p>
+			
+			<div class="panel sticky-element">
+				<button class="button-panel">contact</button>
+				<button class="button-panel">about me</button>
+				<button class="button-panel">projects</button>
+				<button class="button-panel">cases</button>
+				<button class="button-panel">home</button>
+			</div>
 		
-		<div class="panel sticky-element">
-			<button class="button-panel">contact</button>
-			<button class="button-panel">about me</button>
-			<button class="button-panel">projects</button>
-			<button class="button-panel">cases</button>
-			<button class="button-panel">home</button>
-		</div>
-	
-		<p class="main-tittle">front-end.web(developer)_</p>
-		
-		<button class="mode sticky-element">dark mode</button>
-	</section>
+			<p class="main-tittle">front-end.web(developer)_</p>
+			
+			<button class="mode sticky-element">dark mode</button>
+		</section>
+	</div>
 
 	<section class="cases-page">
-		<p>amazing cases</p>
-		
-		<div class="carousel">
-			<div class="carousel-track">
-				<div class="slide">Слайд 1</div>
-				<div class="slide">Слайд 2</div>
-				<div class="slide">Слайд 3</div>
-				<div class="slide">Слайд 4</div>
-				<div class="slide">Слайд 5</div>
-				<div class="slide">Слайд 6</div>
+		<div class="cases-container">
+			<div class="caes-header">
+				<p class="cases-text">amazing cases</p>
+				<div class="cases-underline"></div>
 			</div>
 			
-			<div class="buttons">
-				<button onclick="prevSlide()">←</button>
-				<button onclick="nextSlide()">→</button>
+			<div class="carousel" id="carousel">
+				<div class="carousel-track">
+					<div class="slide">Слайд 1</div>
+					<div class="slide">Слайд 2</div>
+					<div class="slide">Слайд 3</div>
+					<div class="slide">Слайд 4</div>
+					<div class="slide">Слайд 5</div>
+					<div class="slide">Слайд 6</div>
+				</div>
 			</div>
-			
 		</div>
 	</section>
-
+	
 	<section class="projects-page">
-		<p>personal projects</p>
-		
-		<div class="wrapper">
-			<div class="project-1"></div>
-			<div class="project-2"></div>
-			<div class="project-3"></div>
-			<div class="project-4"></div>
+		<div class="projects-container">
+			<div class="projects-header">
+				<p class="project-tittle">personal projects</p>
+				<div class="project-underline"></div>
+			</div>
+			<div class="projects-grid" id="projects">
+				<div class="project-card">
+					<img src="фото/IMG_8495.JPG" alt="Проєкт 1">
+					<div class="project-content">
+						<h3>Проєкт 1</h3>
+						<p>Короткий опис проєкту 1.</p>
+						<a href="project1.html" class="see-more-btn">See more</a>
+					</div>
+				</div>
+				
+				<div class="project-card">
+					<img src="фото/IMG_8496.JPG" alt="Проєкт 2">
+					<div class="project-content">
+						<h3>Проєкт 2</h3>
+						<p>Короткий опис проєкту 2.</p>
+						<a href="project2.html" class="see-more-btn">See more</a>
+					</div>
+				</div>
+				
+				<div class="project-card">
+					<img src="фото/IMG_8497.JPG" alt="Проєкт 3">
+					<div class="project-content">
+						<h3>Проєкт 3</h3>
+						<p>Короткий опис проєкту 3.</p>
+						<a href="project3.html" class="see-more-btn">See more</a>
+					</div>
+				</div>
+				
+				<div class="project-card">
+					<img src="фото/IMG_8498.JPG" alt="Проєкт 4">
+					<div class="project-content">
+						<h3>Проєкт 4</h3>
+						<p>Короткий опис проєкту 4.</p>
+						<a href="project4.html" class="see-more-btn">See more</a>
+					</div>
+				</div>
+			</div>
+			<div class="see-more-link">
+				<a href="#" class="see-more-btn">show more projects</a>
+			</div>
+			
 		</div>
-		
 	</section>
-
+	
+	
+	
+	
 	<section class="about-page">
+		<div class="about-container">
+		
+		</div>
 	
 	</section>
 
 	<section class="contact-page">
-	
+		<div class="contact-container">
+		
+		</div>
 	</section>
 	
-	
-	<script>
-		let currentIndex = 0;
-		const track = document.querySelector('.carousel-track');
-		const slides = document.querySelectorAll('.slide');
-		const slideWidth = slides[0].clientWidth + 10; // 300px + 10px margin
-		const visibleSlides = 3;
-		const maxIndex = slides.length - visibleSlides;
-		
-		function updateCarousel() {
-			track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-		}
-		
-		function nextSlide() {
-			if (currentIndex < maxIndex) {
-				currentIndex++;
-				updateCarousel();
-			}
-		}
-		
-		function prevSlide() {
-			if (currentIndex > 0) {
-				currentIndex--;
-				updateCarousel();
-			}
-		}
-	</script>
+
 
 </body>
 </html>
